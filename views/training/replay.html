@@ -1,0 +1,58 @@
+<div class="web-ctner">
+    <div hr-aside my-type="pxgz"></div>
+    <div hr-header></div>
+    <div class="main-section">
+        <div class="main-screen">
+
+            <div class="overview-item">
+                <switcher></switcher>
+
+                <div class="condition">
+                   <div class="row">
+                      <div class="span3">
+                            上课状态
+                            <select class="span2">
+                                <option value="">全部</option>
+                            </select>
+                      </div>
+                      <div class="span3">
+                           类型
+                            <select class="span2">
+                                <option value="">全部</option>
+                            </select>
+                      </div>
+                      <div class="span6">
+                            上课时间
+                            <input class="span2" type="text" placeholder="阿斯顿">
+                            到
+                            <input class="span2" type="text" placeholder="阿斯蒂芬">
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 15px;">
+                      <div class="span3">
+                            教室ID
+                            <input class="span2" type="text" placeholder="阿斯蒂芬">
+                      </div>
+                      <div class="span3">
+                           老师昵称 
+                            <input class="span2" type="text" placeholder="阿斯蒂芬">
+                      </div>
+                      <div class="span6">
+                            学生手机号/邮箱
+                            <input class="span2" type="text" placeholder="阿斯顿">
+                            <button class="btn btn-danger">搜索</button>
+                      </div>
+                    </div>
+                </div>
+                
+                <div>
+                {{name}}
+                    <div ui-grid="gridOptions" class="grid"></div>
+                {{gridOptions}}
+                </div>
+            </div>
+
+        </div>
+        <load-view src="views/module/footer.html"></load-view>
+    </div>
+</div>

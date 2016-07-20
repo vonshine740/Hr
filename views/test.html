@@ -1,0 +1,81 @@
+<style type="text/css">
+    *{ font-size: 14px!important; }
+</style>
+
+<!-- 下拉选单 -->
+<div class="dropdown dropdown-select">
+    <button class="btn btn-select dropdown-toggle" type="button" id="dropdownMenuID" data-toggle="dropdown">
+        <span class="dropdown-title">已验证的邮箱</span>
+        <span class="glyphicon glyphicon-menu-down"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuID">
+        <li><a href="#">已验证的邮箱</a></li>
+        <li><a href="#">已验证的手机</a></li>
+    </ul>
+</div>
+
+<!-- 币种选择 -->
+<currency class="dir" water="222">{{ghost}}</currency>
+
+<!--  日期输入使用 bootstrap-datetimepicker http://www.bootcss.com/p/bootstrap-datetimepicker/index.htm -->
+<input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime" />
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true
+        //pickerPosition: "bottom-left"
+    });
+</script>   
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div>sdfsdfsdfsfsdfsdfsdfsdfsdfsd</div>
+    </div>
+  </div>
+</div>
+
+<!-- 列表页面 分页 -->
+<div class="page-contain">
+    <div class="page-contain-link">&lt; 上一页</div>
+    <div class="page-contain-link">1</div>
+    <div class="page-contain-link">2</div>
+    <div class="page-contain-link">3</div>
+    <div class="page-contain-link">4</div>
+    <div class="page-contain-link">5</div>
+    <div class="page-contain-link">下一页 &gt;</div>
+    <div class="ml5" style="display:inline-block;">共444页，到</div>
+    <input type="text" style="width:50px;" class="page-contain-link">
+    <div class="ml5" style="display:inline-block;">页</div>
+    <div class="page-contain-link">确定</div>
+</div>
+
+<!-- 弹框分页 -->
+<div class="tc mt30">
+    <span>共39条</span>
+    <span class="ml20">每页</span>
+    <input type="text" value="" class="input20" style="width:50px;"/>
+    <span>行</span>
+    <span class="ml20">第1/29页</span>
+    <span class="ml20">首页</span>
+    <span class="ml10">上一页</span>
+    <span class="ml10">下一页</span>
+    <span class="ml10">尾页</span>
+    <span class="ml20">转到</span>
+    <input type="text" value="" class="input20" style="width:50px;"/>
+    <span>页</span>
+    <span class="btn btn-gray ml20">确定</span>
+</div>
+
+
+<div my-test
+     my-url="http://google.com"
+     my-link-text="Click me to go to Google" >
+    
+</div>
+
+

@@ -1,0 +1,46 @@
+{
+    "api_code": 1,
+    "msg": "数据获取成功！",
+    "data": {
+        "training": {
+            "A": {
+                "users": "488",
+                "course": "07",
+                "hours": "03",
+                "availiable": "1202"
+            },
+            "B": {
+                "users": "58",
+                "course": "07",
+                "hours": "03",
+                "availiable": "1002"
+            }
+        },
+        "kpi": {
+            "finished": {
+                "key": 6,
+                "day": -0.58,
+                "week": 1,
+                "month": -0.647
+            },
+            "unfinished": {
+                "key": 0,
+                "day": 0,
+                "week": 0,
+                "month": 0
+            },
+            "users": {
+                "key": 6,
+                "day": -0.58,
+                "week": 1,
+                "month": -0.647
+            },
+            "complete": {
+                "key": 421,
+                "day": -0.58,
+                "week": 1,
+                "month": -0.647
+            }
+        }
+    }
+}

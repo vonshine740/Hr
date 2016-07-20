@@ -1,0 +1,212 @@
+<div class="web-ctner">
+    <div hr-aside my-type="cpsj"></div>
+    <div hr-header></div>
+    <div class="main-section">
+        <div class="main-screen ov-training">
+            <div class="overview-item">
+                <div switcher options="training"></div>
+                <h2 class="item-title mgt20">项目总数据</h2>
+                <ul class="item-list clearfix">
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-user"></i>
+                            <span class="text">
+                                参培总人数
+                                <span class="sym-total">{{data.training.users}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-train"></i>
+                            <span class="text">
+                                培训课程
+                                <span class="sym-total">{{data.training.course}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-course"></i>
+                            <span class="text">
+                                培训课时数
+                                <span class="sym-total">{{data.training.hours}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-avaliable"></i>
+                            <span class="text">
+                                培训有效期
+                                <span class="sym-total">{{data.training.availiable}}</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="border-section light wrap">
+                <h2 class="title-bar">昨日关键指标<i class="icon icon-help fr"></i></h2>
+                <div class="row-fluid inner-wrap">
+                    <div class="span3 item">
+                        <h3 class="vel-label">已完成课程</h3>
+                        <p class="vel-result">{{data.kpi.finished.key}}</p>
+                        <ul class="vel-trend">
+                            <li>日
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.finished.day>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.finished.day<0" ></i>
+                                    {{data.kpi.finished.day|percent}}
+                                </span>
+                            </li>
+                            <li>周
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.finished.week>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.finished.week<0" ></i>
+                                    {{data.kpi.finished.week|percent}}
+                                </span>
+                            </li>
+                            <li>月
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.finished.month>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.finished.month<0" ></i>
+                                    {{data.kpi.finished.month|percent}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span3 item">
+                        <h3 class="vel-label">未完成课程</h3>
+                        <p class="vel-result">{{data.kpi.unfinished.key}}</p>
+                        <ul class="vel-trend">
+                            <li>日
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.unfinished.day>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.unfinished.day<0" ></i>
+                                    {{data.kpi.unfinished.day|percent}}
+                                </span>
+                            </li>
+                            <li>周
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.unfinished.week>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.unfinished.week<0" ></i>
+                                    {{data.kpi.unfinished.week|percent}}
+                                </span>
+                            </li>
+                            <li>月
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.unfinished.month>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.unfinished.month<0" ></i>
+                                    {{data.kpi.unfinished.month|percent}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span3 item">
+                        <h3 class="vel-label">参培人数</h3>
+                        <p class="vel-result">{{data.kpi.users.key}}</p>
+                        <ul class="vel-trend">
+                            <li>日
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.users.day>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.users.day<0" ></i>
+                                    {{data.kpi.users.day|percent}}
+                                </span>
+                            </li>
+                            <li>周
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.users.week>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.users.week<0" ></i>
+                                    {{data.kpi.users.week|percent}}
+                                </span>
+                            </li>
+                            <li>月
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.users.month>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.users.month<0" ></i>
+                                    {{data.kpi.users.month|percent}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span3 item">
+                        <h3 class="vel-label">累计完成总量</h3>
+                        <p class="vel-result">{{data.kpi.complete.key}}</p>
+                        <ul class="vel-trend">
+                            <li>日
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.complete.day>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.complete.day<0" ></i>
+                                    {{data.kpi.complete.day|percent}}
+                                </span>
+                            </li>
+                            <li>周
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.complete.week>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.complete.week<0" ></i>
+                                    {{data.kpi.complete.week|percent}}
+                                </span>
+                            </li>
+                            <li>月
+                                <span class="trend-data">
+                                    <i class="icon icon-raise" ng-if="data.kpi.complete.month>0" ></i>
+                                    <i class="icon icon-decline" ng-if="data.kpi.complete.month<0" ></i>
+                                    {{data.kpi.complete.month|percent}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview-item">
+                <div switcher options="sortData"></div>
+                <div class="border-section mgt">
+                    <h2 class="title-bar">
+                        <select name="" id="">
+                            <option value="0">最近30天</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="0">2016-03-09至2016-04-07</option>
+                        </select>
+                        <button class="fr btn btn-inverse">按时间对比</button>
+                    </h2>
+                    <p>
+                        <div id="sortData" style="width: 100%; height: 300px;"></div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="overview-item">
+                <switcher></switcher>
+                <div class="border-section mgt">
+                    <h2 class="title-bar">
+                        <select id="" name="">
+                            <option value="0">2016-03-09至2016-04-07</option>
+                            <option value="0">2016-03-09至2016-04-07</option>
+                        </select>
+                        <i class="icon icon-help fr"></i>
+                    </h2>
+                    <div>
+                        <table ng-table="key.tableParams" class="table table-condensed table-bordered table-striped">
+                            <tr ng-repeat="row in $data">
+                                <td data-title="'时间'" sortable="'time'">{{row.time}}</td>
+                                <td data-title="'已完成课程'" sortable="'finished'">{{row.finished}}</td>
+                                <td data-title="'未完成课程'" sortable="'unfinished'">
+                                    {{item.unfinished}}</td>
+                                <td data-title="'参培人数'" sortable="'user'">
+                                    {{item.user}}</td>
+                                <td data-title="'累计完成总量'" sortable="'complete'">
+                                    {{item.complete}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <load-view src="views/module/footer.html"></load-view>
+    </div>
+</div>

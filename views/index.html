@@ -1,0 +1,171 @@
+<!-- the style for index -->
+<style type="text/css">
+    .web-ctner{ background-color: #fff; }
+    .main-ctner{ width: 25rem; padding: 0.19rem 0.34rem; margin-left: auto; margin-right: auto; }
+    .top-line{ height: 0.07rem; background-color: #c94956; border-bottom: 1px solid #aa718f; }
+    .index-banner{ height: 12.5rem; background: #7bade4 url(../img/index/idx-banner.jpg) no-repeat center center; -webkit-background-size: auto 100%;
+    background-size: auto 100%; position: relative; z-index: 1; }
+    .logo-ctner,
+    .logo-ctner h1{ font-size: 0.5rem; font-weight: normal; color: #fff; font-family: 'Light'; height: 0.66rem; line-height: 0.66rem; }
+    .logo-ctner h1{ margin-left: 0.38rem; }
+
+    .login-box{ width: 6rem; position: absolute; left: 50%; top: 50%; margin-top: -50px; }
+    .login-box legend{ font-size: 0.75rem; color: #fefefe; }
+    .login-box legend a{ font-size: 0.25rem; color: #fefefe; margin-top: 8px; }
+    .login-box input{ border: 1px solid #f6f9fc; width: 6rem; height: 0.60rem; background-color: transparent; border-radius: 0; margin-bottom: 0; }
+    .login-box input.uper{ border-radius: 3px 3px 0 0; }
+    .login-box input.lower{ border-radius: 0 0 3px 3px; }
+    .login-box .checkbox-label,
+    .login-box a{ font-size: 14px; color: #fefefe; margin-top: 10px; }
+
+    .sec-title{ padding-left: 15px; padding-right: 15px; font-family: 'Light'; color: #2e3f46; font-size: 0.55rem; font-weight: normal; }
+    .bor-box{ margin-right: 30px; padding-top: 20px; }
+    .bor-box:after{ content: ''; display: block; width: 22rem; border-bottom: 1px solid #a0a0a0; padding-top: 50px; margin-left: auto; margin-right: auto; }
+    .pxxg{ padding-left: 2.00rem; padding-right: 2.00rem; }
+    .pxxg:after{ margin-left: -0.8rem; }
+    .bor-box canvas{ border: 1px solid #dfe3e8; border-radius: 5px; }
+    .box-item{ position: relative; }
+    .box-item .center-txt{ position: absolute; width: 195px; height: 195px; left: 64px; top: 52px; border-radius: 50%; text-align: center; border: 3px solid #e9eff1; }
+    .bigger-txt{ font-size: 0.75rem; color: #c94956; height: 1em; line-height: 1em; margin-top: 50px;}
+    .normal-txt{ font-size: 16px; color: #204659; font-family: 'Regular'; }
+    .box-item .bigger-txt{ margin-bottom: 10px; }
+    .bor-box.last-item{ padding-left: 1.5rem; padding-right: 1.5rem; margin-top: 25px; }
+    .bor-box.last-item .center-txt{ width: 175px; height: 175px; top: 43px; left: 38px; }
+
+    .jcpx{ padding-left: 1.00rem; padding-right: 1.00rem; }
+    .jcpx canvas{ border: 0!important; }
+    .box-item>div{ margin-left: auto; margin-right: auto; }
+    .box-item .data-selector{ height: 6px; width: 100%; border-radius: 3px; background-color: #e8eff3; font-family: 'Light'; margin-bottom: 30px; margin-top: 36px; }
+    .box-item .data-selector .topper{ position: relative; top: -2em; background-color: #eee; height: 2em; line-height: 2em; padding-left: 10px; padding-right: 10px; width: 8em; margin-left: 20px; font-size: 18px; text-align: center; }
+    .box-item .data-selector .bottomer{ background-color: #eee; margin-left: 20px; position: relative; top: -1.9em; margin-right: 20px; }
+    .box-item #Ccount{ margin-top: 55px; }
+</style>
+
+
+<!-- page content -->
+<div class="web-ctner">
+    <div class="top-line"></div>
+
+    <div class="index-banner no-trans">
+        <div class="main-ctner">
+
+            <!-- line -- logo -->
+            <div class="logo-ctner clearfix">
+                <a class="fl" href="/">
+                    <span class="icon-logo"></span>
+                </a>
+                <h1 class="fl"><span class="Medium">HR</span>培训管理后台</h1>
+            </div>
+            <!-- line --- logo end -->
+            
+            <!-- login box -->
+            <div class="login-box">
+                <form action="" class=" ">
+                    <legend class="Thin">
+                        LOGIN
+                        <a href="" class="fr Light">Sign up</a>
+                    </legend>
+                    <fieldset>
+                        <div class="input-group">
+                            <label for=""></label>
+                            <input type="text" class="uper" placeholder="Username" />
+                        </div>
+                        <div class="input-group">
+                            <label for=""></label>
+                            <input type="text" class="form-control lower" placeholder="Password" />
+                        </div>
+                        <div class="input-group clearfix">
+                            <checkbox name="rememberme"></checkbox>
+                            <label class="fl checkbox-label" for="">Remember me</label>
+                            <a href="" class="fr">Forgot password?</a>
+                        </div>
+                        <div class="input-group clearfix">
+                            <a href="" class="btn normal fr">Login</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- login box end -->
+        </div>
+    </div>
+    <div class="main-ctner">
+        <h3 class="sec-title">培训效果见证</h3>
+        <section class="bor-box row-fluid pxxg">
+            <div class="box-item span4">
+                <div id="satisfy" style="width: 280px; height: 300px;"></div>
+                <div class="center-txt">
+                    <p class="bigger-txt">{{index.satisfy}}倍</p>
+                    <span class="normal-txt">高于其他语言培训<br/>机构的学员满意度</span>
+                </div>
+            </div>
+            <div class="box-item span4">
+                <div id="complete" style="width: 280px; height: 300px;"></div>
+                <div class="center-txt">
+                    <p class="bigger-txt">{{index.complete}}%</p>
+                    <span class="normal-txt">学员课程结训</span>
+                </div>
+            </div>
+            <div class="box-item span4">
+                <div id="effect" style="width: 280px; height: 300px;"></div>
+                <div class="center-txt">
+                    <p class="bigger-txt">{{index.effect}}%</p>
+                    <span class="normal-txt">HR和部门经理肯定<br/>课程的实用性</span>
+                </div>
+            </div>
+        </section>
+
+
+        <h3 class="sec-title mgt25">全方位监控培训效果</h3>
+        <section class="bor-box row-fluid jcpx">
+            <div class="box-item">
+                <div class="data-selector">
+                    <div class="topper">课程情况统计</div>
+                    <div class="bottomer">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="Ccount" style="width: 100%; height: 300px;"></div>
+            </div>
+        </section>
+
+        <section class="bor-box row-fluid last-item">
+            <div class="box-item span3">
+                <div id="registered" style="width: 100%; height: 260px;"></div>
+                <div class="center-txt">
+                    <p class="bigger-txt">{{index.users}}</p>
+                    <span class="normal-txt">Total Members<br/>Registered</span>
+                </div>
+            </div>
+            <div class="box-item span3">
+                <div id="level" style="width: 100%; height: 260px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quo voluptates numquam, corrupti, recusandae modi doloremque quis at nobis adipisci aliquam velit iusto iste similique porro reiciendis minus, cum optio!
+                </div>
+            </div>
+            <div class="box-item span3">
+                <div id="data7" style="width: 100%; height: 260px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt illum unde suscipit, assumenda necessitatibus alias eligendi possimus minima odit vel vero velit dolorum soluta ab natus voluptas dicta iure sint.
+                </div>
+            </div>
+            <div class="box-item span3">
+                <div id="data8" style="width: 100%; height: 260px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae laboriosam quidem quod, adipisci omnis nostrum blanditiis porro quam quisquam veritatis accusantium qui cumque commodi sequi fugiat consectetur nulla, illum!
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- page content end -->
+

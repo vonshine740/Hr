@@ -1,0 +1,138 @@
+<div class="web-ctner">
+    <div hr-aside my-type="cpsj"></div>
+    <div hr-header></div>
+    <div class="main-section">
+        <div class="main-screen">
+            <div class="overview-item">
+                <h2 class="item-title">参培总数据</h2>
+                <ul class="item-list clearfix">
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-user"></i>
+                            <span class="text">
+                                用户总人数
+                                <span class="sym-total">{{data.total.users}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-depart"></i>
+                            <span class="text">
+                                参与部门总数
+                                <span class="sym-total">{{data.total.departments}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-product"></i>
+                            <span class="text">
+                                培训产品总数
+                                <span class="sym-total">{{data.total.product}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-project"></i>
+                            <span class="text">
+                                培训项目总数
+                                <span class="sym-total">{{data.total.project}}</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overview-item">
+                <h1 class="title-for-item">培训项目数据</h1>
+                <div switcher options="tabTPOptions"></div>
+                <h2 class="item-title mgt20">项目总数据</h2>
+                <ul class="item-list clearfix">
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-user"></i>
+                            <span class="text">
+                                参培总人数
+                                <span class="sym-total">{{data.tProject.users}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-train"></i>
+                            <span class="text">
+                                培训课程
+                                <span class="sym-total">{{data.tProject.course}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-course"></i>
+                            <span class="text">
+                                培训课时数
+                                <span class="sym-total">{{data.tProject.hours}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-avaliable"></i>
+                            <span class="text">
+                                培训有效期
+                                <span class="sym-total">{{data.tProject.availiable}}</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overview-item">
+                <h1 class="title-for-item">视频学习数据</h1>
+                <div switcher options="tabVSOptions"></div>
+                <h2 class="item-title mgt20">项目总数据</h2>
+                <ul class="item-list clearfix">
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-user"></i>
+                            <span class="text">
+                                参培总人数
+                                <span class="sym-total">{{data.vStudy.users}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-train"></i>
+                            <span class="text">
+                                培训课程
+                                <span class="sym-total">{{data.vStudy.course}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-level"></i>
+                            <span class="text">
+                                培训级别数
+                                <span class="sym-total">{{data.vStudy.level}}</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <i class="icon icon-avaliable"></i>
+                            <span class="text">
+                                培训有效期
+                                <span class="sym-total">{{data.vStudy.availiable}}</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <load-view src="views/module/footer.html"></load-view>
+    </div>
+</div>

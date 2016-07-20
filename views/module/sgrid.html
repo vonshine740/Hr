@@ -1,0 +1,76 @@
+<style type="text/css">
+    .sg-header{
+        border: 1px solid #aaabac;
+        border-bottom-color: #d0d0d0;
+        background-color: #dcdcdc;
+        height: 2.5em;
+        line-height: 2.5em;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .sg-body{ font-size: 14px; }
+    .sg-header,
+    .sg-body{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sg-body li{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 1.5em;
+        line-height: 1.5em;
+    }
+    .t-line{
+        position: relative;
+        z-index: 1;
+        top: 0.55em;
+        left: 4em;
+        height: 8px;
+        width: 80%;
+        border-radius: 20px;
+        background-color: #dcdcdc;
+    }
+    .c-num{
+        position: absolute;
+        width: 4em;
+        padding-right: 1em;
+        left: -4em;
+        top: -0.4em;
+        text-align: right;
+    }
+    .c-line{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 8px;
+        border-radius: 20px;
+        background-color: #7ca3da;
+    }
+</style>
+<div>
+    <div class="sg-header">
+        <div class="row-fluid">
+            <div ng-repeat="label in sgrid.layout" class="{{label.split('.')[1]}}">
+                {{sgrid.title[$index]}}
+                <em ng-if="sgrid.sort[$index]">as</em>
+            </div>
+        </div>
+    </div>
+    <div class="sg-body">
+        <ul>
+            <li class="row-fluid" ng-repeat="item in sgrid.data">
+                <div ng-repeat="label in sgrid.layout">
+                    <div class="{{label.split('.')[1]}}" ng-if="$index == 0">
+                        {{item.name}}
+                    </div>
+                    <div class="{{label.split('.')[1]}}" ng-if="$index == 1">
+                        <div class="t-line">
+                            <div class="c-num">{{item.value}}</div>
+                            <div class="c-line" style="width: {{item.value/sgrid.total*100}}%"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+<style type="text/css">
+    .loc-grid,
+    .course-grid{
+        border: 1px solid #dfe3e8;
+        border-top: 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .loc-grid .sg-body{
+        max-height: 340px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .dept-grid{
+        border: 1px solid #eee;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    .dept-grid .sg-header{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    .dept-grid .sg-body{
+        max-height: 268px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .dept-grid .sg-body .c-line{
+        background-color: #c94956;
+    }
+    .dept-grid .sg-body .t-line,
+    .dept-grid .sg-body .c-line{
+        height: 10px;
+        border-radius: 3px;
+    }
+    .course-grid .t-line{
+        width: 62%;
+    }
+    .course-grid .sg-body{
+        max-height: 376px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+</style>
+<div class="web-ctner">
+    <div hr-aside my-type="cpsj"></div>
+    <div hr-header></div>
+    <div class="main-section">
+        <div class="main-screen">
+            <h2 class="title-txt">用户总数：{{data.uTotal}}</h2>
+            <div class="title-bar">用户属性</div>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">用户性别</dt>
+                <dd id="UGender" class="grid-self"></dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">级别分布</dt>
+                <dd id="ULevel" class="grid-self"></dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">省份分布</dt>
+                <dd class="row-fluid">
+                    <div class="grid-self span7" id="ULocation" style="height: 400px;">
+                    </div>
+                    <div class="span5">
+                        <div class="loc-grid">
+                            <div slider-grid options="loaction"></div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">部门分布</dt>
+                <dd class="dept-grid">
+                    <div slider-grid options="department"></div>
+                </dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">终端分布</dt>
+                <dd id="UDevice" class="grid-self"></dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">课程分布</dt>
+                <dd class="row-fluid">
+                    <div class="span7">
+                        <div id="UCourse" class="grid-self" style="height: 400px;"></div>
+                    </div>
+                    <div class="span5">
+                        <div class="course-grid">
+                            <div slider-grid options="course"></div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+
+        <load-view src="views/module/footer.html"></load-view>
+    </div>
+</div>

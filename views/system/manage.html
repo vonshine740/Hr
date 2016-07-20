@@ -1,0 +1,91 @@
+<style type="text/css">
+    .item-title{ color: #707070; }
+    .btn.normal{ font-size: 14px; }
+    .head-prev{ width: 52px; height: 52px; border-radius: 3px; background: #fff url(../../img/icon/def.png) no-repeat center center; -webkit-background-size: 100% auto; background-size: auto 95%; }
+    .web-ctner input.filename{ width: 93px!important; height: 1em!important; font-size: 14px; color: #959595; border: 0; padding: 0; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; box-shadow: none; font-family: 'Regular'; }
+</style>
+
+<div class="web-ctner">
+    <div hr-aside my-type="sys"></div>
+    <div hr-header></div>
+    <div class="main-section">
+        <div class="main-screen">
+            <div class="w-wraper">
+                <div class="border-section">
+                    <h2 class="item-title">我的账户</h2>
+                    <div class="i-wrapper">
+                        <div class="tac">
+                            <header class="my-switcher">
+                                <div switcher></div>
+                            </header>
+                        </div>
+
+                        <!-- 增加/删减账户 -->
+                        <div class="l-ctner bg">
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="email">常用邮箱</label>
+                                    <div class="controls">
+                                      <input type="text" id="email" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="phone">手机号码</label>
+                                    <div class="controls">
+                                      <input type="text" id="phone" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="uname">登录名称</label>
+                                    <div class="controls">
+                                      <input type="password" id="uname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="cname">中文名字</label>
+                                    <div class="controls">
+                                      <input type="password" id="cname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="cname">头像URL</label>
+                                    <div class="controls">
+                                        <div class="row-fluid">
+                                            <span class="span3">
+                                                <div class="head-prev">
+                                                    <!-- head image container -->
+                                                </div>
+                                            </span>
+                                            <span class="span8">
+                                                <p>
+                                                    <button type="submit" class="btn white small">选择文件</button>
+                                                    <input type="text" readonly="readonly" value="未选择文件" class="filename" />
+                                                </p>
+                                                <p class="mgt">
+                                                    <button type="submit" class="btn white small">点击上传</button>
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="avaliable" style="width: 7em;">用户是否有效</label>
+                                    <div class="controls" style="margin-left: 7em; margin-top: 6px;">
+                                      <input type="radio" style="margin-left: 20px; padding-right: 5px;" name="avaliable" id="avaliable" placeholder="" value="" />正常
+                                      <input type="radio" style="margin-left: 20px; padding-right: 5px;" name="avaliable" id="avaliable" placeholder="" value="" />冻结
+                                      <input type="radio" style="margin-left: 20px; padding-right: 5px;" name="avaliable" id="avaliable" placeholder="" value="" />删除
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="l-ctner tar" style="width: 386px;">
+                            <button type="submit" class="btn normal">确定</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <load-view src="views/module/footer.html"></load-view>
+    </div>
+</div>

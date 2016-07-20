@@ -1,0 +1,35 @@
+<style type="text/css">
+    .switcher{
+        /*width: 4.25rem;*/
+        display: inline-block;
+        height: 0.56rem;
+        line-height: 0.56rem;
+        background-color: #dcdcdc;
+        border-radius: 3px;
+        font-size: 0;
+        color: #404040;
+        margin-top: 5px;
+    }
+    .tab-item{
+        display: inline-block;
+        font-size: 0.29rem;
+        /*width: 50%;*/
+        text-align: center;
+        border-radius: 3px;
+        cursor: pointer;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .tab-item:hover,
+    .tab-item:focus{
+        text-decoration: none;
+    }
+    .tab-item.active{
+        background-color: #7ca3da;
+        color: #fff;
+    }
+</style>
+<div class="switcher">
+<a class="tab-item" href="{{tab.link}}" ng-class="{active: tab.id==routeParams.part}" ng-repeat="tab in tabsData" ng-if="tab.type === 'link'">{{tab.label}}</a>
+<span class="tab-item" ng-class="{active: $index==0}" ng-repeat="tab in tabsData" ng-if="tab.type === 'tab'" ng-click="tab.action()">{{tab.label}}</span>
+</div>

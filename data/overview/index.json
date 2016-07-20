@@ -1,0 +1,40 @@
+{
+    "api_code": 1,
+    "msg": "数据获取成功！",
+    "data": {
+        "total": {
+            "users": "488",
+            "departments": "07",
+            "product": "03",
+            "project": "02"
+        },
+        "tProject": {
+            "A": {
+                "users": "100",
+                "course": "10",
+                "hours": "6000",
+                "availiable": "180"
+            },
+            "B": {
+                "users": "120",
+                "course": "15",
+                "hours": "6500",
+                "availiable": "150"
+            }
+        },
+        "vStudy": {
+            "A": {
+                "users": "100",
+                "course": "10",
+                "level": "04",
+                "availiable": "180"
+            },
+            "B": {
+                "users": "300",
+                "course": "120",
+                "level": "08",
+                "availiable": "190"
+            }
+        }
+    }
+}
