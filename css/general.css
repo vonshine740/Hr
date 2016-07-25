@@ -97,7 +97,7 @@ background-size: 60% auto!important; position: relative; top: 2px; }
 .title-bar{ font-size: 0.3rem; background-color: #d4d4d4; color: #fff; height: 0.80rem; line-height: 0.80rem; padding: 0 20px; padding-right: 15px; }
 
 .grid-ctner{ margin-left: 0.70rem; margin-right: 0.70rem; margin-top: 20px; }
-.grid-title{ font-family: 'Light'; font-size: 0.25rem; border-left: 0.09rem solid #34495e; text-indent: 10px; }
+.grid-title{ font-family: 'Light'; font-size: 0.28rem; border-left: 0.09rem solid #34495e; text-indent: 10px; }
 .grid-self{ width: 100%; min-height: 120px; }
 
 
@@ -109,6 +109,9 @@ background-size: 60% auto!important; position: relative; top: 2px; }
 .item-title,
 .overview-item .item-title{ height: 0.75rem; line-height: 0.75rem; background-color: #cfcfcf; color: #fff; font-family: 'Medium'; font-size: 0.29rem; padding: 0 15px; font-weight: normal; }
 .overview-item .item-list li{ float: left; width: 25%; height: 2.30rem; background-color: #6eb5e5; color: #fff; font-size: 0.29rem; text-align: center; font-family: 'Bold'; }
+.overview-item .item-list li:nth-child(1){ background-color: #6eb5e5; }
+.overview-item .item-list li:nth-child(2){ background-color: #7cbde8; }
+.overview-item .item-list li:nth-child(3){ background-color: #8bc4ea; }
 .overview-item .item-list li:hover{ background-color: #5faee3; }
 .overview-item .item-list li .inner{ margin-top: 25px; }
 .overview-item .item-list li .inner .text{ position: relative; z-index: 1; display: inline-block; }

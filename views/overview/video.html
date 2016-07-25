@@ -1,3 +1,99 @@
+<style type="text/css">
+    .loc-grid,
+    .course-grid{
+        border: 1px solid #dfe3e8;
+        border-top: 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .loc-grid .sg-body{
+        max-height: 340px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .dept-grid{
+        border: 1px solid #eee;
+        border-radius: 6px;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    .dept-grid .sg-header{
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    .dept-grid .sg-body{
+        max-height: 268px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .dept-grid .sg-body .c-line{
+        background-color: #c94956;
+    }
+    .dept-grid .sg-body .t-line,
+    .dept-grid .sg-body .c-line{
+        height: 10px;
+        border-radius: 3px;
+    }
+    .course-grid .t-line{
+        width: 62%;
+    }
+    .course-grid .sg-body{
+        max-height: 376px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .score-range{
+        padding-left: 4em;
+    }
+    .score-range li{
+        border-bottom: 3px solid #c94956;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .avantor{
+        border: 1px solid #284451;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+    }
+    .avantor img{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .score-range h3{
+        color: #c0d4de;
+        font-size: 22px;
+        height: 1.5em;
+        line-height: 1.5em;
+        margin-top: 20px;
+    }
+    .score-range .job{
+        color: #2b7183;
+        font-size: 20px;
+    }
+    .range-i{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-top: 22px;
+        -webkit-background-size: 38.7px 50px!important;
+        background-size: 38.7px 50px!important;
+    }
+    .range-i.first{
+        background: url(img/icon/range1.png) no-repeat center center;
+    }
+    .range-i.second{
+        background: url(img/icon/range2.png) no-repeat center center;
+    }
+    .range-i.third{
+        background: url(img/icon/range3.png) no-repeat center center;
+    }
+</style>
+
 <div class="web-ctner">
     <div hr-aside my-type="cpsj"></div>
     <div hr-header></div>
@@ -5,7 +101,7 @@
         <div class="main-screen ov-training">
 
             <div class="overview-item">
-                <switcher></switcher>
+                <div switcher options="video"></div>
                 <h2 class="item-title mgt20">项目总数据</h2>
                 <ul class="item-list clearfix">
                     <li>
@@ -47,99 +143,93 @@
                 </ul>
             </div>
 
-            <div class="border-section light wrap">
-                <h2 class="title-bar">昨日关键指标<i class="icon icon-help fr"></i></h2>
-                <div class="row-fluid inner-wrap">
-                    <div class="span3 item">
-                        <h3 class="vel-label">已完成课程</h3>
-                        <p class="vel-result">6</p>
-                        <ul class="vel-trend">
-                            <li>日
-                                <span class="trend-data"><i class="icon icon-raise"></i>58%</span>
-                            </li>
-                            <li>周
-                                <span class="trend-data"><i class="icon icon-raise"></i>100%</span>
-                            </li>
-                            <li>月
-                                <span class="trend-data"><i class="icon icon-decline"></i>64.7%</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="span3 item">
-                        <h3 class="vel-label">位完成课程</h3>
-                        <p class="vel-result">0</p>
-                        <ul class="vel-trend">
-                            <li>日
-                                <span class="trend-data">--</span>
-                            </li>
-                            <li>周
-                                <span class="trend-data">--</span>
-                            </li>
-                            <li>月
-                                <span class="trend-data">--</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="span3 item">
-                        <h3 class="vel-label">参培人数</h3>
-                        <p class="vel-result">6</p>
-                        <ul class="vel-trend">
-                            <li>日
-                                <span class="trend-data"><i class="icon icon-raise"></i>58%</span>
-                            </li>
-                            <li>周
-                                <span class="trend-data"><i class="icon icon-raise"></i>100%</span>
-                            </li>
-                            <li>月
-                                <span class="trend-data"><i class="icon icon-decline"></i>64.7%</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="span3 item">
-                        <h3 class="vel-label">累计完成总量</h3>
-                        <p class="vel-result">421</p>
-                        <ul class="vel-trend">
-                            <li>日
-                                <span class="trend-data"><i class="icon icon-raise"></i>58%</span>
-                            </li>
-                            <li>周
-                                <span class="trend-data"><i class="icon icon-raise"></i>100%</span>
-                            </li>
-                            <li>月
-                                <span class="trend-data"><i class="icon icon-decline"></i>64.7%</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <dl class="grid-ctner">
+                <dt class="grid-title">用户性别</dt>
+                <dd id="UGender" class="grid-self"></dd>
+            </dl>
 
-            <div class="overview-item">
-                <switcher></switcher>
-                <div class="border-section mgt">
-                    <h2 class="title-bar">
-                        <select name="" id="">
-                            <option value="0">最近30天</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="0">2016-03-09至2016-04-07</option>
-                        </select>
-                        <button class="fr btn btn-inverse">按时间对比</button>
-                    </h2>
-                    <p>
-                        There is a Grid!
-                    </p>
-                </div>
-            </div>
+            <dl class="grid-ctner">
+                <dt class="grid-title">级别分布</dt>
+                <dd id="ULevel" class="grid-self"></dd>
+            </dl>
 
-            <div class="overview-item">
-                <switcher></switcher>
-                <div class="border-section mgt">
-                    <h2 class="title-bar">昨日关键指标<i class="icon icon-help fr"></i></h2>
-                    <p>
-                        There is a Grid!
-                    </p>
-                </div>
-            </div>
+            <dl class="grid-ctner">
+                <dt class="grid-title">成绩排名</dt>
+                <dd class="row-fluid">
+                    <div class="grid-self span7">
+                        <ul class="score-range">
+                            <li class="row">
+                                <div class="span3">
+                                    <div class="avantor">
+                                        <img src="img/demo/dou.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <h3>Lisa Dim Ray</h3>
+                                    <p class="job">Senior Researcher</p>
+                                </div>
+                                <div class="span3 tac">
+                                    <span class="range-i first"></span>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="span3">
+                                    <div class="avantor">
+                                        <img src="img/demo/dou.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <h3>Lisa Dim Ray</h3>
+                                    <p class="job">Senior Researcher</p>
+                                </div>
+                                <div class="span3 tac">
+                                    <span class="range-i second"></span>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <div class="span3">
+                                    <div class="avantor">
+                                        <img src="img/demo/dou.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <h3>Lisa Dim Ray</h3>
+                                    <p class="job">Senior Researcher</p>
+                                </div>
+                                <div class="span3 tac">
+                                    <span class="range-i third"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span5">
+                        <div class="loc-grid">
+                            <div slider-grid options="score"></div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">观看时长排名</dt>
+                <dd class="dept-grid">
+                    <div slider-grid options="timelong"></div>
+                </dd>
+            </dl>
+
+            <dl class="grid-ctner">
+                <dt class="grid-title">被观看视频TOP10</dt>
+                <dd class="row-fluid">
+                    <div class="span7">
+                        <div id="UCourse" class="grid-self" style="height: 400px;"></div>
+                    </div>
+                    <div class="span5">
+                        <div class="course-grid">
+                            <div slider-grid options="videos"></div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
 
         </div>
 

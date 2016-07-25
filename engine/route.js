@@ -58,7 +58,9 @@ webApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $
         // 培训跟踪定制
         .when('/training', {
             // 培训分总定制首页
-            templateUrl: 'views/training/index.html'
+            templateUrl: 'views/training/index.html',
+            controller: 'trainingCtrl',
+            resolve: loader(['training'])
         })
         .when('/training/progress', {
             // 培训跟踪定制 -- 学习进度

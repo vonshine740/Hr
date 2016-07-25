@@ -131,9 +131,9 @@ img{ vertical-align: middle; max-width: 100%; }
 .fr{ float: right; }
 /*box display type*/
 .block{ display: block; width: 100%; }
-.in-block{ display: inline-block; }
-.hide{ display: none; }
-.hide-v{ visibility: hidden; }
+.in-block{ display: inline-block!important; }
+.hide{ display: none!important; }
+.hide-v{ visibility: hidden!important; }
 /*position type*/
 .pos-r{ position: relative; z-index: 1; }
 .pos-a{ position: absolute; z-index: 1; }
